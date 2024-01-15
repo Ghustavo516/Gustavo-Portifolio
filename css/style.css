@@ -132,7 +132,7 @@ nav{
 .small-title{
     font-weight: 900;
     position: relative;
-    top: 45px;
+    top: 70px;
     font-size: 50px;
 }
 
@@ -206,6 +206,155 @@ nav{
     margin-top: 25px;
 }
 
+#skills-container{
+    display: block;
+    margin: 20px auto 0px auto;
+    width: 90%;
+}
+
+.skills-content{
+    display: inline-flex;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.skill-experience{
+    width: 50%;
+    margin: 20px 20px 0px 20px ;
+}
+
+.skill-experience h1{
+    font-family: 'Satisfy', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.progress{
+    width: 100%;
+    height: 15px;
+    font-weight: bold;
+}
+
+.progress-bar{
+    height: 15px;
+}
+
+#project-container{
+    display: block;
+    margin: 20px auto 0px auto;
+    width: 90%;
+}
+
+.project-content{
+    display: inline-flex;
+    width: 100%;
+}
+
+.project, .project-robotic{
+    box-shadow: rgba(68, 165, 244, 0.363) 0px 3px 6px, rgba(75, 165, 255, 0.404) 0px 3px 6px;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 50%;
+    height: 250px;
+    background-color: rgb(21, 95, 208);
+    border-radius: 15px;
+    z-index: 2;
+}
+
+.project-robotic{
+    background-size: 100% 100%;
+    height: 500px;
+}
+
+.description-project{
+    font-family: 'Satisfy', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin: 25px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.description{
+    font-weight: normal;
+    font-size: 18px;
+    color: rgb(191, 191, 191);
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: justify;
+}
+ 
+
+.project img{
+    width: 100%;
+    border: 1px solid white;
+    z-index: 1;
+    border-radius: 15px;
+}
+
+#contact-container{
+    display: block;
+    margin: 20px auto 0px auto;
+    width: 90%;
+}
+
+#type-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.information-contact{
+    align-items: center; 
+    margin-right: 20px;
+    padding: 10px;
+    width: 100%;
+    height: 100px;
+}
+
+.information-contact img{
+    display: block;
+    margin: 0px auto 10px auto;
+
+}
+
+.information-contact h2{
+    font-family: 'Satisfy', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+
+.information-contact h3{
+    font-family: 'Satisfy', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+}
+
+
+
 
 
 
@@ -261,7 +410,62 @@ nav{
     }
 
     .resume-wrap{
+        width: 95%;
+    }
+
+    .skills-content{
+        display: table;
+        margin-bottom: 0px;
+        
+    }
+
+    .skill-experience{
         width: 90%;
+    }
+
+    .project{
+        width: 90%;
+        height: 50%;
+    }
+
+    .project-robotic{
+        width: 90%;
+        height: 250px;
+    }
+
+
+
+    .project-content{
+        display: table;
+        width: 100%;
+    }
+
+    .description{   
+        font-size: 15px;   
+    }
+
+    #contact-container{
+        width: 90%;
+    }
+
+    #type-contact{
+        display: table;
+        width: 100%;
+        margin-bottom: 20px;
+  
+    }
+
+    .information-contact{
+        margin-bottom: 30px;
+    }
+
+    .information-contact h3{
+        font-family: 'Satisfy', cursive;
+        font-family: 'Ubuntu', sans-serif;
+        font-family: 'Varela Round', sans-serif;
+        font-size: 13px;
+        color: white;
+        text-align: center;
     }
 
 }
