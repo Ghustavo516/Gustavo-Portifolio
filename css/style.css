@@ -18,6 +18,7 @@ nav{
 
 #navbar-menu{
     position: absolute;
+    top: 10px;
     right: 20px;
     display: inline-flex;
 }
@@ -254,18 +255,46 @@ nav{
     width: 100%;
 }
 
+.project-content a{
+    width: 100%;
+}
+
 .project, .project-robotic{
     box-shadow: rgba(68, 165, 244, 0.363) 0px 3px 6px, rgba(75, 165, 255, 0.404) 0px 3px 6px;
-    background-size: 100%;
+    background: no-repeat;
+    background-size: 100% 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 20px;
-    width: 50%;
-    height: 250px;
+    width: 95%;
+    height: 400px;
     background-color: rgb(21, 95, 208);
     border-radius: 15px;
     z-index: 2;
+    border: 1px solid blue;
+}
+
+#smartCalc{
+    background-size: 50% 100%;
+    background-position: 50%;
+    background-color: #323232;
+}
+
+#supermecado-api{
+    background-size: 100% 50%;
+    background-position: 50%;
+    background-color: #282A36;
+}
+
+#TecMundo{
+    background-size: 101% 70%; 
+    background-color: #ADADAD;
+}
+
+#youtube{
+    background-size: 101% 70%;
+    background-color: #171717;
 }
 
 .project-robotic{
@@ -425,15 +454,13 @@ a{
 
     .project{
         width: 90%;
-        height: 50%;
+        height: 20vh;
     }
 
     .project-robotic{
         width: 90%;
         height: 250px;
     }
-
-
 
     .project-content{
         display: table;
