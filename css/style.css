@@ -18,7 +18,7 @@ nav{
 
 #navbar-menu{
     position: absolute;
-    top: 10px;
+    top: 15px;
     right: 20px;
     display: inline-flex;
 }
@@ -35,13 +35,13 @@ nav{
     font-family: 'Satisfy', cursive;
     font-family: 'Ubuntu', sans-serif;
     font-family: 'Varela Round', sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 400;
     color: beige;
     margin-left: 15px;
 }
 
-.nav-itens:hover{
+.nav-itens a:hover{
     cursor: pointer;
     color: rgb(11, 126, 241); 
 }
@@ -144,6 +144,52 @@ nav{
     color: rgb(43, 43, 43);
 }
 
+#about-content{
+    display: block;
+    margin: 20px auto 0px auto;
+    width: 90%;
+}
+
+#information-about{
+    width: 100%;
+    display: inline-flex;
+}
+
+#text-about{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#text-about h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 55px;
+    font-weight: bold; 
+    color: white;
+}
+
+#text-about p{
+    font-family: 'Satisfy', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    color: rgb(122, 122, 122);
+    font-size: 15px;
+    text-align: justify;
+    width: 90%;
+}
+
+
+#information-about img{
+    display: block;
+    margin: 0px auto 0px auto;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    background: #212121;
+}
+
 #resume-working{
     display: block;
     margin: 20px auto 0px auto;
@@ -242,6 +288,59 @@ nav{
 
 .progress-bar{
     height: 15px;
+}
+
+#project-test{
+    display: block;
+    margin: 0px auto 0px auto;
+    width: 100%;
+}
+
+#myCarousel{
+    max-width: 100%;
+}
+
+.information-project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #212121;
+    height: 70px;
+}
+
+.project-button{
+    font-family: 'Satisfy', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    margin-left: 10px;
+    background-color: rgb(8, 110, 243);
+}
+
+.project-button:hover{
+    background-color: rgb(16, 65, 170);
+}
+
+.carousel-control-prev, .carousel-control-next{
+    width: 45px;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover{
+    transition: 1s;
+    opacity: 40%;
+    background: #acacac;
+}
+
+.container{
+    border: 1px solid red;
+    width: 150%;
+}
+
+#visible-projects-card-mobile{
+    display: none;
 }
 
 #project-container{
@@ -382,9 +481,49 @@ a{
     text-align: center;
 }
 
+#copyright{
+    color: white;
+    position: absolute;
+    left: 0;
+}
 
+footer{
+    background: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    margin-top: 15px;
+}
 
+.footer-menu{
+    position: absolute;
+    display: inline-flex;
+    right: 10px;
+    margin-top: 15px;
+}
 
+.logo-footer{
+    display: block;
+    margin: 0px auto 0px auto;
+}
+.nav-item-footer{
+    margin-left: 10px;
+}
+.nav-item-footer a, .text-copyright{
+    font-family: 'Satisfy', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    color: aliceblue;
+
+}
+
+.text-copyright{
+    margin-top: 15px;
+    position: absolute;
+    left: 10px;
+}
 
 
 /* Exemplo de media query para celular */
@@ -411,6 +550,25 @@ a{
         width: 335px;
         height: 50px;
         vertical-align: middle;
+    }
+
+    #information-about{
+        display: table;
+    }
+
+    #text-about{
+        width: auto;
+    }
+
+    #text-about h1{
+        font-size: 35px;
+    }
+
+    #information-about img{
+        margin-top: 20px;
+        width: 90%;
+        height: 90%;
+
     }
 
     #resume{
@@ -450,6 +608,14 @@ a{
 
     .skill-experience{
         width: 90%;
+    }
+
+    #visible-projects-card-mobile{
+        display: table;
+    }
+
+    #project-test{
+        display: none;
     }
 
     .project{
@@ -494,11 +660,5 @@ a{
         color: white;
         text-align: center;
     }
-
-}
-
-/* Exemplo de media query para tablet */
-@media only screen and (min-width: 600px) and (max-width: 1024px) {
-    /* Estilos para tablets */
 }
 
